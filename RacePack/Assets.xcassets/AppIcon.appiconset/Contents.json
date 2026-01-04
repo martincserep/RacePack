@@ -13,7 +13,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Névtelen terv-3 1.png",
+      "filename" : "ios-dark.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -25,7 +25,7 @@
           "value" : "tinted"
         }
       ],
-      "filename" : "Névtelen terv-4.png",
+      "filename" : "ios-tinted.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -91,7 +91,7 @@
       "size" : "512x512"
     },
     {
-      "filename" : "Névtelen terv.png",
+      "filename" : "1024 1.png",
       "idiom" : "universal",
       "platform" : "watchos",
       "size" : "1024x1024"
