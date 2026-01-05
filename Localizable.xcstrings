@@ -1,0 +1,223 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@, %@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@, %3$@"
+          }
+        }
+      }
+    },
+    "×%lld" : {
+
+    },
+    "actions.newRace" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Race"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Új verseny"
+          }
+        }
+      }
+    },
+    "actions.quickActions" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quick Actions"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gyors Műveletek"
+          }
+        }
+      }
+    },
+    "actions.timeline.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Week plan"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hét terve"
+          }
+        }
+      }
+    },
+    "actions.timeline.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timeline"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idővonal"
+          }
+        }
+      }
+    },
+    "Add Item" : {
+
+    },
+    "app.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RacePack"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RacePack"
+          }
+        }
+      }
+    },
+    "Create a new race and generate a packing plan." : {
+
+    },
+    "Create a race to get a timeline, packing checklist, and race day flow." : {
+
+    },
+    "home.activeRace.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Active race"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktív verseny"
+          }
+        }
+      }
+    },
+    "info.noActiveRace" : {
+      "localizations" : {
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nincs aktív verseny"
+          }
+        }
+      }
+    },
+    "Item at %@" : {
+
+    },
+    "Items" : {
+
+    },
+    "Onboarding" : {
+
+    },
+    "Open races ABC" : {
+
+    },
+    "Opens the active race." : {
+
+    },
+    "Select an item" : {
+
+    },
+    "tab.home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kezdőlap"
+          }
+        }
+      }
+    },
+    "tab.packs" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Packs"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Csomagok"
+          }
+        }
+      }
+    },
+    "tab.races" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Races"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versenyek"
+          }
+        }
+      }
+    },
+    "tab.settings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beállítások"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

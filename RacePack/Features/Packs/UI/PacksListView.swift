@@ -23,7 +23,7 @@ struct PacksListView: View {
           }
           .onDelete(perform: delete)
         }
-        .navigationTitle("Packs")
+        .navigationTitle("tab.packs")
         .toolbar {
           Button {
             createPack()

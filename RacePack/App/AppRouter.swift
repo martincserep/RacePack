@@ -10,8 +10,9 @@ internal import Combine
 
 @MainActor
 final class AppRouter: ObservableObject {
-  @Published var selectedTab: AppTab = .races
+  @Published var selectedTab: AppTab = .home
 
+  @Published var homePath = NavigationPath()
   @Published var racesPath = NavigationPath()
   @Published var packsPath = NavigationPath()
   @Published var settingsPath = NavigationPath()
@@ -22,6 +23,7 @@ final class AppRouter: ObservableObject {
 
   func push(_ route: Route, on tab: AppTab) {
     switch tab {
+    case .home: racesPath.append(route)
     case .races: racesPath.append(route)
     case .packs: packsPath.append(route)
     case .settings: settingsPath.append(route)
@@ -30,6 +32,7 @@ final class AppRouter: ObservableObject {
 
   func pop(on tab: AppTab) {
     switch tab {
+    case .home: if !homePath.isEmpty { homePath.removeLast() }
     case .races: if !racesPath.isEmpty { racesPath.removeLast() }
     case .packs: if !packsPath.isEmpty { packsPath.removeLast() }
     case .settings: if !settingsPath.isEmpty { settingsPath.removeLast() }
@@ -38,6 +41,7 @@ final class AppRouter: ObservableObject {
 
   func reset(tab: AppTab) {
     switch tab {
+    case .home: homePath = NavigationPath()
     case .races: racesPath = NavigationPath()
     case .packs: packsPath = NavigationPath()
     case .settings: settingsPath = NavigationPath()

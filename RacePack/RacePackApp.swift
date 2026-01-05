@@ -19,6 +19,7 @@ struct RacePackApp: App {
     var body: some Scene {
         WindowGroup {
           AppRootView()
+            
         }
         .modelContainer(container)
     }
