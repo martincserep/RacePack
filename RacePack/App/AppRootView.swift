@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppRootView: View {
   @StateObject private var router = AppRouter()
-
+    @Environment(\.modelContext) private var context
   // Ide majd a saját entitlement state-ed jön (RevenueCat / StoreKit / saját).
   @State private var isPremium = false
 
@@ -17,7 +17,18 @@ struct AppRootView: View {
 
   var body: some View {
     TabView(selection: $router.selectedTab) {
-
+        NavigationStack(path: $router.racesPath) {
+           HomeView()
+            .navigationDestination(for: Route.self) { route in
+              switch route {
+              //case .raceDetail(let id): RaceDetailView(raceId: id)
+              //case .raceEdit(let id): RaceEditorView(raceId: id)
+              default: EmptyView()
+              }
+            }
+        }
+        .tabItem { Label("tab.home", systemImage: "house") }
+        .tag(AppTab.home)
       NavigationStack(path: $router.racesPath) {
          RacesListView()
           .navigationDestination(for: Route.self) { route in
@@ -28,7 +39,7 @@ struct AppRootView: View {
             }
           }
       }
-      .tabItem { Label("Races", systemImage: "flag.checkered") }
+      .tabItem { Label("tab.races", systemImage: "flag.checkered") }
       .tag(AppTab.races)
 
       NavigationStack(path: $router.packsPath) {
@@ -41,14 +52,23 @@ struct AppRootView: View {
             default: EmptyView()
             }
           }
+          .task {
+                  do {
+                      BundleTemplatesDebug.dump()
+                    try TemplateSeeder().seedIfNeeded(context: context)
+                  } catch {
+                    // Itt később lehet user-facing alert / telemetry
+                    print("Template seeding failed: \(error)")
+                  }
+                }
       }
-      .tabItem { Label("Packs", systemImage: "bag") }
+      .tabItem { Label("tab.packs", systemImage: "bag") }
       .tag(AppTab.packs)
 
       NavigationStack(path: $router.settingsPath) {
         SettingsView()
       }
-      .tabItem { Label("Settings", systemImage: "gearshape") }
+      .tabItem { Label("tab.settings", systemImage: "gearshape") }
       .tag(AppTab.settings)
     }
     .environmentObject(router)

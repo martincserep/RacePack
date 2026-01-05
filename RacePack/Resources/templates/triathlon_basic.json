@@ -1,0 +1,11 @@
+{
+  "id": "triathlon-basic-v1",
+  "title": "Triathlon – Basic Pack",
+  "sportType": "triathlon",
+  "items": [
+    { "name": "Goggles", "category": "swim", "quantity": 1 },
+    { "name": "Helmet", "category": "bike", "quantity": 1 },
+    { "name": "Race belt", "category": "essentials", "quantity": 1 }
+  ]
+}
+

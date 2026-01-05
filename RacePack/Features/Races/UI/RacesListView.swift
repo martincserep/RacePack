@@ -16,6 +16,6 @@ struct RacesListView: View {
         router.open(.raceDetail(id: "ABC"), on: .races, requiresPremium: false, isPremium: true)
       }
     }
-    .navigationTitle("Races")
+    .navigationTitle("tab.races")
   }
 }

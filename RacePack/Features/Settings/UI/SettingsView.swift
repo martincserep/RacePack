@@ -13,10 +13,10 @@ struct SettingsView: View {
 
   var body: some View {
     List {
-      Button("Settings") {
+      Button("tab.settings") {
         router.open(.raceDetail(id: "ABC"), on: .races, requiresPremium: false, isPremium: true)
       }
     }
-    .navigationTitle("Settings")
+    .navigationTitle("tab.settings")
   }
 }
